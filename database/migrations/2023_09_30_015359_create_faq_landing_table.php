@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('faq_landing', function (Blueprint $table) {
             $table->id();
+            $table->string('question',200);
+            $table->string('answer',500);
+        
+
             $table->timestamps();
         });
     }

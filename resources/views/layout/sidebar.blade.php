@@ -34,8 +34,8 @@
             <li class="dropdown @if (request()->routeIs('posPricing')) active @endif">
                 <a href="{{ route('posPricing') }}" class="nav-link"><i data-feather="tag"></i><span>Pricing</span></a>
             </li>
-            <li class="dropdown @if (request()->routeIs('posFaq')) active @endif">
-                <a href="{{ route('posFaq') }}" class="nav-link"><i data-feather="help-circle"></i><span>FAQ</span></a>
+            <li class="dropdown @if (request()->routeIs('pos.faq')) active @endif">
+                <a href="{{ route('pos.faq') }}" class="nav-link"><i data-feather="help-circle"></i><span>FAQ</span></a>
             </li>
         </ul>
         <ul class="sidebar-menu">
@@ -49,8 +49,8 @@
             <li class="dropdown @if (request()->routeIs('spPricing')) active @endif">
                 <a href="{{ route('spPricing') }}" class="nav-link"><i data-feather="tag"></i><span>Pricing</span></a>
             </li>
-            <li class="dropdown @if (request()->routeIs('spFaq')) active @endif">
-                <a href="{{ route('spFaq') }}" class="nav-link"><i data-feather="help-circle"></i><span>FAQ</span></a>
+            <li class="dropdown @if (request()->routeIs('sp.faq')) active @endif">
+                <a href="{{ route('sp.faq') }}" class="nav-link"><i data-feather="help-circle"></i><span>FAQ</span></a>
             </li>
         </ul>
     </aside>

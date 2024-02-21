@@ -9,7 +9,7 @@
                             <div class="card-header" style="margin-top: 15px;">
                                 <div class="faq-list">
                                     <ul>
-                                        @foreach ($post as $posts)
+                                        {{-- @foreach ($post as $posts) --}}
                                         <li data-aos="fade-up" data-aos-delay="100">
                                             <i class="bx bx-help-circle icon-help"></i>
                                             <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-{{ $post->id }}">
@@ -19,11 +19,14 @@
                                             </a>
                                             <div id="faq-list-{{ $post->id }}" class="collapse show" data-bs-parent=".faq-list">
                                                 <p>
+                                                    {{ $post->question }}
+                                                </p>
+                                                <p>
                                                     {{ $post->answer }}
                                                 </p>
                                             </div>
                                         </li>
-                                        @endforeach
+                                        {{-- @endforeach --}}
                                     </ul>
                                 </div>
                             </div>
